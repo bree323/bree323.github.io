@@ -32,7 +32,7 @@ const props = defineProps({
     :twitter-url="twitterUrl"
   >
     <div class="flex items-center">
-      <figure class="w-1/2 px-12">
+      <!-- <figure class="w-1/2 px-12">
         <img
           :src="presenterImage"
           class="
@@ -43,7 +43,7 @@ const props = defineProps({
             border border-8 border-secondary-400
           "
         />
-      </figure>
+      </figure> -->
       <div class="w-1/2">
         <slot />
       </div>
