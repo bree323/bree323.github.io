@@ -32,21 +32,20 @@ const props = defineProps({
     :twitter-url="twitterUrl"
   >
     <div class="flex items-center">
-      <!-- <figure class="w-1/2 px-12">
+      <figure class="w-1/2 px-12">
         <img
           :src="presenterImage"
-          class="
-            rounded-full
-            object-cover
-            h-80
-            w-80
-            border border-8 border-secondary-400
-          "
+          class="imgbox object-cover h-100 w-80 border border-1 border-secondary-400"
         />
-      </figure> -->
+      </figure>
       <div class="w-1/2">
         <slot />
       </div>
     </div>
   </default>
 </template>
+<style scoped>
+.imgbox {
+  margin-right: 50px;
+}
+</style>

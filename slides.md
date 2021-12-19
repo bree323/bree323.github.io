@@ -24,7 +24,7 @@ title: 转正答辩
 
 ---
 layout: presenter
-presenterImage: 'https://pbs.twimg.com/profile_images/1441783883456942080/vV37mSqv_400x400.jpg'
+presenterImage: './assets/images/h5.jpg'
 ---
 
 # 目录
@@ -39,23 +39,23 @@ presenterImage: 'https://pbs.twimg.com/profile_images/1441783883456942080/vV37mS
 # 🧑‍💻 工欲善其事必先利其器
 
 <div class='grid grid-cols-2 grid-rows-1 gap-20'>
-  <div v-click>
-    <h2>公司制度学习</h2>
+  <div>
+    <h2 v-click>公司制度学习</h2>
     <ol style="margin: 16px">
-      <li>✅ react、react-hook、react-router</li>
-      <li>✅ mobx</li>
-      <li>✅ ramada</li>
-      <li>✅ echarts</li>
+      <li v-click>✅ 技术评审流程</li>
+      <li v-click>✅ 测试管理流程</li>
+      <li v-click>✅ 版本发布流程</li>
+      <li v-click>✅ 质量保证流程</li>
     </ol>
 
   </div>
-  <div v-click>
-    <h2>公司相关前端技术栈学习</h2>
+  <div>
+    <h2 v-click>公司相关前端技术栈学习</h2>
     <ol style="margin: 16px">
-      <li>✅ react、react-hook、react-router</li>
-      <li>✅ mobx</li>
-      <li>✅ ramada</li>
-      <li>✅ echarts</li>
+      <li v-click>✅ react、react-hook、react-router</li>
+      <li v-click>✅ mobx</li>
+      <li v-click>✅ ramada</li>
+      <li v-click>✅ echarts</li>
     </ol>
     <!-- <code>expect(🍚⏱).toYield(✅)</code> -->
   </div>
@@ -63,22 +63,25 @@ presenterImage: 'https://pbs.twimg.com/profile_images/1441783883456942080/vV37mS
 
 ---
 
-# 工作回顾——>项目开发
-
+# 工作回顾 ——> 项目开发
+<!-- 
 1. 劳务二期
 2. 劳务小程序
 3. 广州人才大数据（可视化）
 4. 疫情防控系统（可视化）
-5. 云剑
+5. 云剑 -->
 
 ---
-layout: center
+layout: projectDetails
 class: text-center
 ---
 
-# 工作回顾——>组件开发
 
-<div>132334</div>
+# 工作回顾 ——> 组件开发
+
+---
+
+<h1>工作回顾 ——> 组件开发</h1>
 
 ---
 
@@ -94,7 +97,7 @@ class: text-center
 <img v-click src="/story-raster-vs-vector/draft2.jpg" />
 </div>
 
-# 工作回顾——>工作总结
+# 工作回顾 ——> 工作总结
 
 <div>
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -104,12 +107,12 @@ class: text-center
 
 ---
 
-# 个人收获——>技术收获
+# 个人收获 ——> 技术收获
 技术收获。。。
 ---
 
 
-# 个人收获——>项目开发经验
+# 个人收获 ——> 项目开发经验
 ![raster vs vector images](https://vector-conversions.com/images/vector_vs_raster.jpg)
 
 ---
