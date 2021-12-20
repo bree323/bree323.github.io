@@ -3,6 +3,68 @@
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: local('Kalam Regular'),
-    url('/fonts/Kalam-Regular.ttf') format('ttf');
+  src: local('Kalam Regular'), url('/fonts/Kalam-Regular.ttf') format('ttf');
+}
+
+.h2 {
+  line-height: 36px;
+  font-size: 16px;
+  color: #2ba18e;
+  text-align: center;
+}
+
+.p {
+  width: 70%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2ba18e;
+}
+
+.typing {
+  width: 100%;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 2.5s steps(15, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15em;
+  }
+}
+/* 光标闪啊闪 */
+@keyframes blink-caret {
+  from,
+  to {
+    box-shadow: 1px 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 1px 0 0 0;
+  }
+}
+
+
+.end {
+	letter-spacing: 0.2rem;
+	font-size: 1.5rem;
+	background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-background-size: 200% 100%;
+  -webkit-animation: maskedAnimation 4s infinite linear;
+}
+
+@keyframes maskedAnimation {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -100% 0;
+	}
 }
