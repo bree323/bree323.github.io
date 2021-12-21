@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-12-19 17:09:35
  * @Descripton: 
- * @LastEditTime: 2021-12-20 22:42:12
+ * @LastEditTime: 2021-12-22 01:23:09
 -->
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -71,23 +71,23 @@ for (var i = 0; i < trafficWay1.length; i++) {
         },
       },
     },
-    {
-      value: 2,
-      name: '',
-      itemStyle: {
-        normal: {
-          label: {
-            show: false,
-          },
-          labelLine: {
-            show: true,
-          },
-          color: 'rgba(0, 0, 0, 0)',
-          borderColor: 'rgba(0, 0, 0, 0)',
-          borderWidth: 0,
-        },
-      },
-    },
+    // {
+    //   value: 1,
+    //   name: '',
+    //   itemStyle: {
+    //     normal: {
+    //       label: {
+    //         show: false,
+    //       },
+    //       labelLine: {
+    //         show: true,
+    //       },
+    //       color: 'rgba(0, 0, 0, 0)',
+    //       borderColor: 'rgba(0, 0, 0, 0)',
+    //       borderWidth: 0,
+    //     },
+    //   },
+    // },
   )
 }
 for (var i = 0; i < trafficWay2.length; i++) {
@@ -105,7 +105,7 @@ for (var i = 0; i < trafficWay2.length; i++) {
       },
     },
     {
-      value: 2,
+      value: 1,
       name: '',
       itemStyle: {
         normal: {
@@ -130,11 +130,11 @@ var getSeriesOption = (data, trafficWay) => [
     type: 'pie',
     clockWise: true,
     radius: [105, 119],
-    hoverAnimation: false,
+    hoverAnimation: true,
     itemStyle: {
       normal: {
         label: {
-          show: false,
+          show: true,
           position: 'outside',
           color: '#ddd',
           formatter: function (params) {
@@ -154,7 +154,7 @@ var getSeriesOption = (data, trafficWay) => [
         labelLine: {
           // length: 30,
           // length2: 100,
-          show: false,
+          show: true,
           // color: '#00ffff',
         },
       },
@@ -197,12 +197,13 @@ const option1 = {
   },
   grid: {
     left: '-10%',
+    right: "20%"
   },
   legend: {
-    show: false,
+    show: true,
     icon: 'circle',
     orient: 'vertical',
-    left: 'right',
+    // left: 'right',
     // x: 'center',
     data: [
       '劳务二期',
@@ -212,13 +213,12 @@ const option1 = {
       '云剑（进行中）',
     ],
     // right: 340,
-    right: 0,
-    bottom: 0,
-    align: 'left',
+    right: -5,
+    top: -5,
     textStyle: {
       color: '#fff',
     },
-    itemGap: 5,
+    itemGap: 10,
   },
   toolbox: {
     show: false,
@@ -291,9 +291,9 @@ const refChart1 = ref(null)
 const refChart2 = ref(null)
 onMounted(() => {
   const chart1 = echarts.init(refChart1.value)
-  const chart2 = echarts.init(refChart2.value)
+  // const chart2 = echarts.init(refChart2.value)
   chart1.setOption(option1)
-  chart2.setOption(option2)
+  // chart2.setOption(option2)
   // window.addEventListener('resize', chart.resize)
 })
 </script>
@@ -314,7 +314,7 @@ onMounted(() => {
       <h1 style="width: 50px; text-align:center; height: 50px">项目开发统计</h1>
       <!-- <div class="img"></div> -->
       <div ref="refChart1" class="chart"></div>
-      <div ref="refChart2" class="chart"></div>
+      <!-- <div ref="refChart2" class="chart"></div> -->
     </div>
   </div>
 </template>
@@ -340,7 +340,7 @@ onMounted(() => {
   background-repeat: no-repeat;
 }
 .chart {
-  width: 60%;
+  width: 70%;
   height: 85%;
   margin: 0 auto;
 }

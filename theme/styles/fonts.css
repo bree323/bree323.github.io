@@ -21,6 +21,16 @@
   color: #2ba18e;
 }
 
+.tabletext {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.lightHeight {
+  color: #34e2c5;
+  font-weight: 600;
+}
+
 .typing {
   width: 100%;
   white-space: nowrap;
