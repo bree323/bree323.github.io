@@ -54,7 +54,7 @@ presenterImage: './assets/images/h5.jpg'
     <ol style="margin: 16px">
       <li v-click>✅ react、react-hook、react-router</li>
       <li v-click>✅ mobx</li>
-      <li v-click>✅ ramada</li>
+      <li v-click>✅ ramda</li>
       <li v-click>✅ echarts</li>
     </ol>
     <!-- <code>expect(🍚⏱).toYield(✅)</code> -->
