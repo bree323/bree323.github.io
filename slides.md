@@ -24,549 +24,186 @@ title: 转正答辩
 
 ---
 layout: presenter
-presenterImage: 'https://pbs.twimg.com/profile_images/1441783883456942080/vV37mSqv_400x400.jpg'
+presenterImage: './assets/images/h5.jpg'
 ---
 
-# Estee Tey
+# 目录
 
-- 💻 Grad Software Developer at Thoughtworks
-- ✏ Writes about Web Dev, UI, Dev growth
-- 🎨 Experienced in creating mockups & graphics
-
-<!-- <div class="my-10 grid grid-cols-[80px,1fr]">
-  <div><ri-github-line class="opacity-50"/><a href="https://github.com/lyqht" target="_blank">lyqht</a></div>
-  <div><ri-twitter-line class="opacity-50"/><a href="https://twitter.com/estee_tey" target="_blank">estee_tey</a></div>
-</div> -->
+- 🧑‍💻 工作回顾
+- 📝 个人收获
+- 🎨 个人规划
+- 🤹 团队建议
 
 ---
 
-# Expectations
+# 🧑‍💻 工欲善其事必先利其器
 
-<div class='grid grid-cols-2 grid-rows-2 gap-20'>
-  <div v-click>
-    <h2>No Prerequisites</h2>
-    <code>expect(target_audience).toBeAny()</code>
-  </div>
-  <div v-click>
-    <h2>Your time to be worth it</h2>
-    <code>expect(🍚⏱).toYield(✅)</code>
-  </div>
-  <div v-click>
-    <h2>Learn something</h2>
-    <code>expect(🧠).toIncrease();</code>
-  </div>
-  <div v-click>
-    <h2>Have fun thinking</h2>
-    <code>expect(🤔).andThen(😄)</code>
-  </div>
-
-</div>
-
-
----
-
-# Table of Contents?
-
-1. What is SVG?
-2. Why do we use SVG?
-3. How do we get SVG?
-4. How to use SVG?
-
----
-layout: center
-class: text-center
----
-
-# What is SVG?
-
----
-layout: center
-class: text-center
----
-
-# Images
-
-<div>
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Story Time! <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
----
-
-<div class="grid grid-cols-2">
-<img v-click src="https://i.etsystatic.com/10236183/c/1599/1271/170/109/il/fd287d/2254910083/il_340x270.2254910083_srgv.jpg" />
-<img v-click src="/story-raster-vs-vector/telegram_chat.png" />
-</div>
-
----
-
-<div class="grid grid-cols-2">
-<img v-click src="/story-raster-vs-vector/draft1.jpg" />
-<img v-click src="/story-raster-vs-vector/draft2.jpg" />
-</div>
-
----
-
-<img class="h-80 mx-auto" src="/story-raster-vs-vector/draft_done.jpg" />
-
-
----
-
-<div class="grid grid-cols-2">
-
-<img v-click src="/story-raster-vs-vector/design.png" />
-<img v-click src="/story-raster-vs-vector/design_colored.png" />
-
-</div>
----
-
-<img src="/story-raster-vs-vector/design_final.png" />
-
----
-
-# Raster vs Vector Images
-
-![raster vs vector images](https://vector-conversions.com/images/vector_vs_raster.jpg)
-
----
-
-# Image File Types
-
-| File Extension                          | Description                                                      |
-| --------------------------------------- | ---------------------------------------------------------------- |
-| <code>.gif</code>                       | Graphics Interchange Format                                      |
-| <code>.png</code>                       | Portable Network Graphic                                         |
-| <code>.jpg</code>  / <code>.jpeg</code> | Image format by Joint Photographic Experts Group                 |
-| <code>.webp</code>                      | A superior image format of <code>.png</code> & <code>.jpg</code> |
-| <code>.svg</code>                       | Scalable Vector Graphics                                         |
-
----
-
-# Image File Types
-
-| File Extension                          | Color Modes                                            | Compression                 | Usage                                                            |
-| --------------------------------------- | ------------------------------------------------------ | --------------------------- | ---------------------------------------------------------------- |
-| <code>.gif</code>                       | Indexed Color                                          | Lossless                    | Animated images                                                  |
-| <code>.png</code>                       | Greyscale, True Color, Alpha                           | Lossless (better than .GIF) | Static Line art, iconic graphics where transparency matters.     |
-| <code>.jpg</code>  / <code>.jpeg</code> | True Color                                             | Lossy                       | Photographs, realistic images of people, venues etc.             |
-| <code>.webp</code>                      | Depends on compression                                 | Lossless / Lossy            | A superior image format of <code>.png</code> & <code>.jpg</code> |
-| <code>.svg</code>                       | Anything that can be specified using CSS color syntax. | NA                          | UI that requires to be redrawn accurately at different sizes     |
-
-
-<!-- Compression: The information that is discarded in the compression is information that the human eye cannot detect -->
-
----
-
-# How to get SVG
-
-1. Create SVG from scratch
-2. Generate SVG
-3. Extract from websites
-
----
-layout: center
-class: text-center
----
-
-# Create SVG with 3 basic elements
-
-`<rectangle />`
-
-`<circle />`
-
-`<polygon />`
-
-<div class="pt-12" v-click>
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Code Time! <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
----
-
-# Create SVG with 3 simple shapes in code
-
-<img class="h-80" src="https://waytogo.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2016/06/28170410/G-A-montage-of-flag-erasers.jpg" />
-
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-
-# JP flag in SVG 
-
-<div class="demo-container">
-  <svg class="demo-svg">
-      <rect width="100%" height="100%" fill="white" />
-      <circle cx="50%" cy="50%" r=60 fill="#BC002D" />
-  </svg>
-</div>
-
-<div class='demo-container' v-click>
-
-```html {all}
-<svg>
-    <rect width="100%" height="100%" fill="white" />
-    <circle cx="50%" cy="50%" r=60 fill="#BC002D" />
-</svg>
-```
-  
-</div>
-
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-
-# TH flag in SVG
-
-<div class="demo-container">
-  <svg class="demo-svg">
-    <rect width="100%" height="20%" y="0" fill="red" />
-    <rect width="100%" height="20%" y="20%" fill="white" />
-    <rect width="100%" height="20%" y="40%" fill="blue" />
-    <rect width="100%" height="20%" y="60%" fill="white" />
-    <rect width="100%" height="20%" y="80%" fill="red" />
-  </svg>
-</div>
-
-<div class='demo-container' v-click>
-
-```html {all}
-<svg>
-    <rect width="100%" height="20%" y="0" fill="red" />
-    <rect width="100%" height="20%" y="20%" fill="white" />
-    <rect width="100%" height="20%" y="40%" fill="blue" />
-    <rect width="100%" height="20%" y="60%" fill="white" />
-    <rect width="100%" height="20%" y="80%" fill="red" />
-</svg>
-```
-  
-</div>
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-
-# VN flag in SVG 
-
-<div class="demo-container">
-  <svg class="demo-svg">
-    <defs>
-      <polygon id="star" fill="yellow"
-        points="100,10 40,198 190,78 10,78 160,198" />
-    </defs>
-    <rect width="100%" height="100%" fill="red" />
-    <svg viewBox="100 0 600 600" x="25%" y="25%">
-      <use href="#star">
-      </use>
-    </svg>
-  </svg>
-</div>
-
-<div class='demo-container' v-click>
-
-```html {all}
-<svg>
-  <defs>
-    <polygon id="star" fill="yellow"
-      points="100,10 40,198 190,78 10,78 160,198" />
-  </defs>
-  <rect width="100%" height="100%" fill="red" />
-  <svg viewBox="100 0 600 600" x="25%" y="25%">
-    <use href="#star">
-    </use>
-  </svg>
-</svg>
-```
-  
-</div>
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-
-## Polygon vs Polyline
-
-<div class='grid-cols-2 grid'>
-
-<div class="demo-container">
-  <svg class="demo-svg">
-    <defs>
-      <polygon id="polygon" points="100,10 40,198 190,78 10,78 160,198"  fill='#abcbca' stroke='#123123' stroke-width='5'  />
-    </defs>
-    <svg viewBox="100 0 300 300" x="25%" y="25%">
-      <use href="#polygon">
-      </use>
-    </svg>
-  </svg>
-
-```html {all}
-<polygon points="100,10 40,198 190,78 10,78 160,198" fill='#abcbca' stroke='#123123' stroke-width='5'  />
-```
-
-
-</div>
-
-<div class="demo-container">
-  <svg class="demo-svg">
-    <defs>
-      <polyline id="polyline" points="100,10 40,198 190,78 10,78 160,198"  fill='#abcbca' stroke='#123123' stroke-width='5'  />
-    </defs>
-    <svg viewBox="100 0 300 300" x="25%" y="25%">
-      <use href="#polyline">
-      </use>
-    </svg>
-  </svg>
-
-```html {all}
-<polyline points="100,10 40,198 190,78 10,78 160,198"  fill='#abcbca' stroke='#123123' stroke-width='5'  />
-```
-
-</div>
-
-
-
-
-</div>
-
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-
-# SG flag in SVG
-
-<div class="demo-container">
-  <svg class="demo-svg">
-    <defs>
-        <polygon id="white-star" points="100,10 40,198 190,78 10,78 160,198" fill="white" />
-    </defs>
-    <rect width="100%" height="50%" fill="red" />
-    <rect width="100%" height="50%" y="50%" fill="white" />
-    <circle cx='15%' cy='25%' r='30' fill='white' />
-    <circle cx='20%' cy='25%' r='30' fill='red' />
-    <svg viewBox="600 -100 1000 1800">
-        <use href="#white-star" />
-        <use href="#white-star" x="-20%" y="10%" />
-        <use href="#white-star" x="20%" y="10%" />
-        <use href="#white-star" x="-12.5%" y="22%" />
-        <use href="#white-star" x="12.5%" y="22%" />
-    </svg>
-  </svg>
-</div>
-
-<div class='demo-container' v-click>
-
-```svg {all}
-<svg>
-  <rect width="100%" height="50%" fill="red" />
-  <rect width="100%" height="50%" y="50%" fill="white" />
-  <circle cx='15%' cy='25%' r='30' fill='white' />
-  <circle cx='20%' cy='25%' r='30' fill='red' />
-  <svg viewBox="600 -100 1000 1800">
-    <use href="#white-star" />
-    <use href="#white-star" x="-20%" y="10%" />
-    <use href="#white-star" x="20%" y="10%" />
-    <use href="#white-star" x="-12.5%" y="22%" />
-    <use href="#white-star" x="12.5%" y="22%" />
-  </svg>
-</svg>
-```
-  
-</div>
----
-layout: center
-class: text-center
----
-
-# Create SVG with Design Tools
-
-<div class='mx-auto px-4 w-100 grid place-items-center grid-cols-3 gap-x-10'>
-  <a href="https://www.figma.com"><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/figma-1-logo.png" /></a>
-  <a href="https://www.sketch.com/"><img src="https://cdn.iconscout.com/icon/free/png-256/sketch-61-722739.png" /></a>
-  <a href="https://www.adobe.com/sg/products/illustrator.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png" /></a>
-</div>
-
-<!-- TODO: try drawing gummy bear in Figma and exporting it as a file, then show how to use it as a developer  -->
-
----
-layout: center
-class: text-center
----
-
-# Figma Demo
-
-Ellipse,
-Polygon,
-Paths,
-Bezier Curves
-
-<a href="https://www.figma.com/file/vHcMllyWIi5lPMhKldSI7k/intro-to-svg-shapes"><img class="h-20 mx-auto" src="https://cdn.freebiesupply.com/logos/thumbs/2x/figma-1-logo.png" /></a>
-
-<!-- Demo: bezier curve ear, adding triangle party hat -->
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-# Setting SVG File as an image source
-
-<div class='grid grid-cols-2'>
-<img class='mx-auto' src="https://raw.githubusercontent.com/lyqht/intro-to-svg-slides/main/public/svg/animals/Rabbit.svg"/>
-
-```html
-<img src="/svg/animals/Rabbit.svg"/>
-```
-</div>
-
-<!-- When you add an SVG image using the <img> tag without specifying the size, it assumes the size of the original SVG file. -->
-
----
-layout: new-section
-logoHeader: '/intro-to-svg-slides/terminal-box-fill.svg'
----
-# Setting SVG File as an image source
-
-<div class='grid grid-cols-2'>
-<img class='mx-auto special-image' src="https://raw.githubusercontent.com/lyqht/intro-to-svg-slides/main/public/svg/animals/Rabbit.svg"/>
-<div>
-
-```html
-<img src="/svg/animals/Rabbit.svg" 
-  class="special-image" />
-```
-
-```css
-.special-image {
-  height:240px; 
-  animation:spin 4s linear infinite;
-}
-
-@keyframes spin { 
-  100% {
-      transform:rotate(360deg); 
-  } 
-}
-```
-
-</div>
-
-
-</div>
-
-<style>
-.special-image {
-  height:240px; 
-  animation:spin 4s linear infinite;
-}
-
-@keyframes spin { 
-  100% {
-      transform:rotate(360deg); 
-  } 
-}
-</style>
-
-<!-- When you add an SVG image using the <img> tag without specifying the size, it assumes the size of the original SVG file. -->
-
----
-
-# Generate SVG
-
-<div class="mx-auto h-80 grid grid-cols-2">
+<div class='grid grid-cols-2 grid-rows-1 gap-20'>
   <div>
-    1. <a href="https://squircley.app/">Squicley</a> for generating Squircles
-    <img class="mt-6 pr-6" src="/squircley-demo.png" />
+    <h2 v-click>公司制度学习</h2>
+    <ol style="margin: 16px">
+      <li v-click>✅ 技术评审流程</li>
+      <li v-click>✅ 测试管理流程</li>
+      <li v-click>✅ 版本发布流程</li>
+      <li v-click>✅ 质量保证流程</li>
+    </ol>
+
   </div>
-</div>
-
----
-
-# Generate SVG
-
-<div class="mx-auto h-80 grid grid-cols-2">
   <div>
-    2. <a href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a> for generating backgrounds
-    <img class="mt-6 pr-6" src="/SVGBackgrounds-demo.png" />
+    <h2 v-click>公司相关前端技术栈学习</h2>
+    <ol style="margin: 16px">
+      <li v-click>✅ react、react-hook、react-router</li>
+      <li v-click>✅ mobx</li>
+      <li v-click>✅ ramda</li>
+      <li v-click>✅ echarts</li>
+    </ol>
+    <!-- <code>expect(🍚⏱).toYield(✅)</code> -->
   </div>
 </div>
 
 ---
 
-# Extract from websites
+# 工作回顾
+<!-- 
+1. 劳务二期
+2. 劳务小程序
+3. 广州人才大数据（可视化）
+4. 疫情防控系统（可视化）
+5. 云剑 -->
 
-Demo with [Hacktoberfest's SVG](https://hacktoberfest.digitalocean.com/)
+---
+layout: projectDetails
+class: text-center
+---
 
-> P.S. If you use any extracted images for your own websites or apps, please remember to give **attribution**.
+
+# 工作回顾 ——> 组件开发
+
+<!-- <h1>工作回顾 ——> 组件开发</h1> -->
+---
+layout: componentDetails
+class: text-center
+---
 
 ---
 
-# Bonus: Optimization of SVG
-
-[SVGOMG](https://jakearchibald.github.io/svgomg/) 
-
----
-
-# Bonus for React Devs: convert from SVG to JSX
-
-[SVG to JSX Demo](https://svg2jsx.com/)
-
----
-
-# Summary
-
-1. What is SVG?
-2. Why do we use SVG?
-3. How do we get SVG?
-4. How to use SVG?
+<div class="grid grid-cols-2" style="padding: 24px">
+  <figure v-click class="single bg">
+        <img class="img-fluid" width="200" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        <figcaption class="h2">卡片组件</figcaption>
+  </figure>
+  <figure v-click class="single bg" style="padding: 24px">
+        <img class="img-fluid" width="500" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        <figcaption class="h2">人员列表组件</figcaption>
+  </figure>
+</div>
+<p class="p" v-click>
+小结： 这两组件基于react类组件的方式实现，开发过程中，遇到组件无条件多次刷新的问题，通过查阅文档以及同事的点拨，对于react类组件的更新机制有了更进一步的理解
+</p>
 
 ---
 
-# SVG Element Cheatsheet
+<div class="grid grid-cols-1" style="padding: 24px">
+  <figure v-click class="single bg">
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+          <img class="img-fluid" width="300" height="500" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+          <img class="img-fluid" width="300" height="500" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        </div>
+        <figcaption class="h2">可配置项表单组件</figcaption>
+  </figure>
+</div>
+<p class="p" v-click>
+小结： 采用配置项的方式生成表单项，显著的提高了开发效率，将原本达到上千行的主文件，优化到300到400行之间；这个组件的开发，体会到开发组件中的<b>高内聚低耦合</b>开发思想的重要性。
+</p>
 
-|     | Shape     | Usage Example                                              |
+---
+
+<div class="grid grid-cols-2" style="padding: 24px">
+  <figure v-click class="single bg">
+        <img class="img-fluid" width="400" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        <figcaption class="h2">类进度条柱状图组件</figcaption>
+  </figure>
+  <figure v-click class="single bg" style="padding: 24px">
+        <img class="img-fluid" width="300" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        <figcaption class="h2">饼图组件</figcaption>
+  </figure>
+</div>
+
+---
+
+<div class="grid grid-cols-2" style="padding: 24px">
+  <figure v-click class="single bg">
+        <img class="img-fluid" width="400" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        <figcaption class="h2">折线图组件</figcaption>
+  </figure>
+  <figure v-click class="single bg" style="padding: 24px">
+        <img class="img-fluid" width="300" src="https://res.cloudinary.com/kirillkrasin/image/upload/v1529409840/codepen/cat.jpg" alt="image">
+        <figcaption class="h2">表格列表组件</figcaption>
+  </figure>
+</div>
+<p class="p" v-click>
+小结：echarts所带配置项过多，时常为找某个属性而花费过多时间，连续经过两个可视化项目的锻炼，对于echarts的常规配置项已基本掌握规律；再者，可视化图表对于数据的要求，前端应严谨考虑到数据异常引起的系列问题
+</p>
+
+---
+
+# 工作回顾 ——> 总结
+
+  <!-- 1. 任务分析
+    1. 由于对项目没有整体感知，对工时的把控不够
+    2. 对ui、ue以及需求文档的审阅不够仔细
+  2. bug原因分析：
+    1. 优化类
+    2. 粗心大意类（错别字、字体、ui取色）
+    3. 业务需求类 -->
+|   |     |
+| ----- | ------------------- | 
+| 任务分析 | <div class="tabletext" v-click> <ol> <li>由于对项目没有整体感知，对工时的把控不够</li> <li>对ui、ue以及需求文档的审阅不够仔细</li> </ol> </div> | 
+| bug原因分析 | <div class="tabletext" v-click> <ol> <li>优化类</li> <li>粗心大意类（错别字、字体、ui取色）</li> <li>业务需求类</li> </ol> </div> | 
+---
+
+# 个人收获 ——> 技术收获
+
+| 技术收获             | 项目开发经验                                              |
+| ------------------- | ------------------------------------------------ |
+|  <div class="tabletext" v-click> <ol> <li>基本掌握了<span class="lightHeight">react</span>常用技术栈及其生态</li> <li>熟悉了<span class="lightHeight">小程序</span>的开发</li> <li>界面的<span class="lightHeight">组件化开发</span>思想</li> <li>熟悉了基于ecarts的<span class="lightHeight">数据可视化</span>开发</li> </ol> </div>       |  <div class="tabletext" v-click> <ol> <li>开发前需仔细阅读<span class="lightHeight">ue</span>及需求文档，对<span class="lightHeight">ui</span>整体进行感知后，确定好整体到局部的开发思路后再开发</li> <li>采用<span class="lightHeight">scss</span>预编译语言，高效编写样式，同时也便于后期的维护</li> <li>领悟了<span class="lightHeight">低耦合高类聚</span>的组件开发思想</li> <li>对于请求返回的数据处理，统一需采用<span class="lightHeight">try catch</span>处理，以防数据源的异常导致前端界面报错</li> </ol></div>                           |
+
+---
+
+# 个人规划
+
+---
+
+<h1>近期规划</h1>
+
+| <span style="font-size: 14px; color: #88ad8f">方向</span>  | <span style="color: #34d399">Typescript</span>     | <span style="color: #34d399">可视化</span>      |    <span style="color: #34d399">深入项目常规技术栈</span>                               |
+| ---- | -------------- | ---------------- | ---------------------------------- |
+| <span style="font-size: 14px; color: #88ad8f">目标</span>  | <div class="tabletext" v-click>项目采用Typescript开发</div>      | <div class="tabletext" v-click>熟悉相关技术栈： echart\svg\canvas</div>  |  <div class="tabletext" v-click> <ol> <li>进一步掌握react-hooks、mobx的使用及原理；</li> <li>react-router缺少实际开发应用，在项目中进一步掌握</li> <li>进一步熟悉ramda中常用api</li> </ol> </div>            |
+
+---
+layout: longPlan
+class: text-center
+---
+
+---
+# 团队建议
+
+---
+<h1>团队建设</h1>
+
+|     | 团队优势     | 建议                                              |
 | --- | --------- | ---------------------------------------------------------- |
-| 1.  | Square    | `<rect width="40" height="40" />`                          |
-| 2.  | Rectangle | `<rect width="80" height="40" />`                          |
-| 3.  | Circle    | `<circle cx="50%" cy="50%" r="60" />`                      |
-| 4.  | Ellipse   | `<ellipse cx="100" cy="50" rx="80" ry="40" />`             |
-| 5.  | Polygon   | `<polygon points="100,10 40,198 190,78 10,78 160,198" />`  |
-| 6.  | Polyline  | `<polyline points="100,10 40,198 190,78 10,78 160,198" />` |
+| 1.  |  <div v-click class="tabletext">公司的<a href="http://doc.d-bigdata.com:18888/docs/web/web-1cjsl7riha85a">在线文档</a>给技术分享提供了一个平台，我们可以在这个平台上实现技术积累</div>    | <div v-click class="tabletext"><span style="color: #88ad8f">不足：</span>由于项目任务繁重，互动性上和积极性上较为缺乏 <br/> <span style="color: #34d399">建议：</span> 在<a href="https://www.yuque.com/codingfor/sum/gyn1cv#LZptPY1MvlZXXxGKO9Wgmg1QU4aHLk8x">语雀</a>上创建一个知识小组或者协作知识库，提高大家在技术交流上的积极性</div>                           |
+| 2.  | <div v-click class="tabletext"> 前端团队拥有可视化组件图表预览库<a href="http://42.123.99.90:29999/#/">FFun-components-viewer</a></div>                         | <div v-click class="tabletext"><span style="color: #88ad8f">不足：</span> 仅提供了预览作用，可操作性并不理想 <br/> <span style="color: #34d399">建议：</span>针对基于echarts的组件，可在echarts提供的<a href="https://www.makeapie.com/user.html?u=obd-o-6S8d0eJw6Pc3GW1rgYuU54gexNDAm&type=star">组件平台</a>共享，提高可视化组件的开发效率</div>                              |
+| 3.  |  <div v-click class="tabletext">雄厚的技术实力</div>          |  <div v-click class="tabletext">不定期进行codeReview</div>               |
 
 ---
 
-# Topics for you to explore more
+# end
 
-- More complex SVG elements such as patterns, filters, paths
-- Accessibility of SVGs
-- Performance of SVGs
+<div>end</div>
 
 ---
-
-# More Resources
-
-- [MDN Web Docs on SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
-- [CSS Tricks - how to scale SVG](https://css-tricks.com/scale-svg/)
-- [Smashing Magazine - SVG Generators](https://www.smashingmagazine.com/2021/03/svg-generators/)
-- [Frontend Masters - SVG Essentials & Animations v2](https://frontendmasters.com/courses/svg-essentials-animation/?utm_source=css-tricks&utm_medium=website&utm_campaign=css-tricks-tags-sidebar)
-
+layout: center
+class: text-center
 ---
-
-# Thank you!
-
-Hope you enjoyed the L&L 😄 
-
-Any questions? 
-
---
-
-[Feedback form](https://forms.gle/HQ8JoEL3MuESbbVP9)
-
-<img src="https://raw.githubusercontent.com/lyqht/intro-to-svg-slides/main/public/survey.svg" class='h-50' />

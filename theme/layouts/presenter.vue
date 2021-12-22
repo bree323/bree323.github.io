@@ -35,13 +35,7 @@ const props = defineProps({
       <figure class="w-1/2 px-12">
         <img
           :src="presenterImage"
-          class="
-            rounded-full
-            object-cover
-            h-80
-            w-80
-            border border-8 border-secondary-400
-          "
+          class="imgbox object-cover h-100 w-80 border border-1 border-secondary-400"
         />
       </figure>
       <div class="w-1/2">
@@ -50,3 +44,8 @@ const props = defineProps({
     </div>
   </default>
 </template>
+<style scoped>
+.imgbox {
+  margin-right: 50px;
+}
+</style>
