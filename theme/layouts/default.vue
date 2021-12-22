@@ -1,10 +1,11 @@
 <!--
  * @Date: 2021-12-18 04:26:04
  * @Descripton: 
- * @LastEditTime: 2021-12-20 22:43:30
+ * @LastEditTime: 2021-12-23 00:01:36
 -->
 <script setup>
 import { ref, onMounted } from 'vue'
+import Background from "../components/Background.vue"
 import * as echarts from 'echarts'
 
 let list = [
@@ -137,18 +138,9 @@ onMounted(() => {
 </script>
 <template>
   <div class="bg-main slidev-layout">
-    <div class="background">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <!-- <NavLine /> -->
     <!-- <div ref="refChart" class="chart"></div> -->
-
+    <Background />
     <CornerCurves class="absolute transform bottom-0 right-0 flip-x" />
     <div class="my-auto z-10">
       <slot />

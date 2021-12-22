@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-12-19 17:09:35
  * @Descripton: 
- * @LastEditTime: 2021-12-22 01:23:09
+ * @LastEditTime: 2021-12-22 23:50:29
 -->
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -172,7 +172,7 @@ const option1 = {
     left: '49%',
     textStyle: {
       color: '#fff',
-      fontSize: 22,
+      fontSize: 24,
       fontWeight: '400',
     },
   },
@@ -214,9 +214,10 @@ const option1 = {
     ],
     // right: 340,
     right: -5,
-    top: -5,
+    top: 10,
     textStyle: {
       color: '#fff',
+      fontSize: 16
     },
     itemGap: 10,
   },
@@ -324,8 +325,6 @@ onMounted(() => {
   height: 100%;
 }
 .my-auto {
-  position: relative;
-  /* bottom: 50px; */
   width: 100%;
   height: 100%;
   min-height: 500px;
@@ -340,6 +339,9 @@ onMounted(() => {
   background-repeat: no-repeat;
 }
 .chart {
+  position: relative;
+  top: 30px;
+  right: 30px;
   width: 70%;
   height: 85%;
   margin: 0 auto;
