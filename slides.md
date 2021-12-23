@@ -98,10 +98,10 @@ class: text-center
   </figure>
 </div>
 <p class="p" style="position: relative; bottom: 20px" v-click>
-<span class="second-color">小结：</span>这两组件基于react类组件的方式实现，开发过程中，遇到组件无条件多次刷新的问题，通过查阅文档以及同事的点拨，对于react类组件的更新机制有了更进一步的理解
+<span class="second-color">小结：</span>这两组件基于react类组件的方式实现，开发过程中，解决了组件无条件多次刷新的问题，对于react类组件的更新机制有了更进一步的理解
 </p> -->
 
----
+<!-- ---
 
 <div class="grid grid-cols-1" style="padding: 24px">
   <figure v-click class="single bg">
@@ -115,8 +115,8 @@ class: text-center
 <p class="p" v-click>
 <span class="second-color">小结：</span>采用配置项的方式生成表单项，显著的提高了开发效率，将原本达到上千行的主文件，优化到300到400行之间；这个组件的开发，体会到开发组件中的<b>高内聚低耦合</b>开发思想的重要性。
 </p>
-
----
+-->
+--- 
 
 <div class="grid grid-cols-2" style="padding: 24px">
   <figure v-click class="single bg">
